@@ -86,19 +86,34 @@
                     fetch(`/faq-category/${categoryId}`)
                         .then(response => response.json())
                         .then(data => {
-                            const faqContent = data.map(faq =>
-                                `<div class="accordion-item">
-                            <h3 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${faq.id}">
-                                    ${faq.question}
-                                </button>
-                            </h3>
-                            <div id="collapse-${faq.id}" class="accordion-collapse collapse">
-                                <div class="accordion-body">${faq.answer}</div>
-                            </div>
-                        </div>`).join('');
+                            const faqContent = data.map((faq, index) => {
+                                if (index === 0) {
+                                    return `<div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#collapse-${faq.id}" aria-controls="collapse-${faq.id}">
+                                                ${faq.question}
+                                            </button>
+                                        </h3>
+                                        <div id="collapse-${faq.id}" class="accordion-collapse collapse show" data-bs-parent="#faqtest-${categoryId}">
+                                            <div class="accordion-body">${faq.answer}</div>
+                                        </div>
+                                    </div>`
+                                } else {
+                                    return `<div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#collapse-${faq.id}" aria-controls="collapse-${faq.id}">
+                                                ${faq.question}
+                                            </button>
+                                        </h3>
+                                        <div id="collapse-${faq.id}" class="accordion-collapse collapse" data-bs-parent="#faqtest-${categoryId}">
+                                            <div class="accordion-body">${faq.answer}</div>
+                                        </div>
+                                    </div>`
+                                }
+                            }).join('');
 
-                            tabContent.innerHTML = `<div class="accordion h-100">${faqContent}</div>`;
+                            tabContent.innerHTML =
+                                `<div class="accordion h-100" id="faqtest-${categoryId}">${faqContent}</div>`;
                         })
                         .catch(error => console.error('Error:', error));
                 } else {
