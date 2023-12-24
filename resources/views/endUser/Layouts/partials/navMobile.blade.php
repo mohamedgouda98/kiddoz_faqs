@@ -1,5 +1,5 @@
 <div class="offcanvas offcanvas-start mobile-view" tabindex="-1" id="offcanvasExample"
-     aria-labelledby="offcanvasExampleLabel">
+    aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -9,39 +9,51 @@
     <div class="offcanvas-body p-0">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./parents.html">
+                <a class="nav-link" aria-current="page" href="{{ route('endUser.parent') }}">
                     <i class="las la-user-friends"></i>
                     parents
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./staff.html">
+                <a class="nav-link" aria-current="page" href="{{ route('endUser.staff') }}">
                     <i class="las la-user-tie"></i>
                     stuff
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./features.html">
+                <a class="nav-link" aria-current="page" href="{{ route('endUser.features') }}">
                     <i class="las la-store-alt"></i>
                     features
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./packages.html">
+                <a class="nav-link" aria-current="page" href="{{ route('endUser.packages') }}">
                     <i class="las la-shopping-cart"></i>
                     packages
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./contact.html">
+                <a class="nav-link" aria-current="page" href="{{ route('endUser.contact-us') }}">
                     <i class="las la-phone-volume"></i>
                     contact us
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./about.html">
+                <a class="nav-link" aria-current="page" href="{ route('endUser.about-us') }}">
                     <i class="las la-microphone-alt"></i>
                     about us
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{{ route('endUser.faqs') }}">
+                    <i class="las la-question-circle"></i>
+                    faqs
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{{ route('endUser.articles') }}">
+                    <i class="las la-newspaper"></i>
+                    Article
                 </a>
             </li>
         </ul>

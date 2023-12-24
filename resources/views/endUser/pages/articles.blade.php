@@ -40,7 +40,7 @@
                             {{ $article->created_at }}
                         </span>
                             <p class="articles__card__pragraph">
-                                {{ $article->short_text }}
+                                {!! $article->short_text !!}
                             </p>
                             <a class="articles__card__action" href="{{ route('endUser.articles.single_article', $article) }}"
                                target="_blank">Read More<i class="la la-chevron-right articles__card__action__arrow"></i></a>
