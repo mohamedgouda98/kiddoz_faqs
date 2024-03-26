@@ -52,7 +52,7 @@
                                 🥈 Notes
                             </li>
                             <li>
-                                🥈 Media
+                                🥈 Gallery
                             </li>
                             <li>
                                 🥈 Branding profile
@@ -93,7 +93,7 @@
                                 🥇 Notes
                             </li>
                             <li>
-                                🥇 Media
+                                🥇 Gallery
                             </li>
                             <li>
                                 🥇 Branding profile
@@ -108,19 +108,10 @@
                                 🥇Policy
                             </li>
                             <li>
-                                🥇News
-                            </li>
-                            <li>
                                 🥇Attendance reports
                             </li>
                             <li>
                                 🥇Academic
-                            </li>
-                            <li>
-                                🥇Media
-                            </li>
-                            <li>
-                                🥇Gallery
                             </li>
                             <li>
                                 🥇Staff login tracking
@@ -156,7 +147,7 @@
                                 💎 Notes
                             </li>
                             <li>
-                                💎 Media
+                                💎 Gallery
                             </li>
                             <li>
                                 💎 Branding profile
@@ -171,19 +162,10 @@
                                 💎 Policy
                             </li>
                             <li>
-                                💎 News
-                            </li>
-                            <li>
                                 💎 Attendance reports
                             </li>
                             <li>
                                 💎 Academic
-                            </li>
-                            <li>
-                                💎 Media
-                            </li>
-                            <li>
-                                💎 Gallery
                             </li>
                             <li>
                                 💎 Staff login tracking
@@ -202,9 +184,6 @@
                             </li>
                             <li>
                                 💎 Notifications
-                            </li>
-                            <li>
-                                💎 Payments
                             </li>
                         </ul>
                     </div>
