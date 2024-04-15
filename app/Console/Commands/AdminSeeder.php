@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Hash;
 
@@ -47,7 +48,6 @@ class AdminSeeder extends Command
                 'remember_token' => null,
             ],
         ];
-
         User::insert($users);
         return 0;
     }
