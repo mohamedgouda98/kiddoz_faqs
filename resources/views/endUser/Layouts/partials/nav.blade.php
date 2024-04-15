@@ -45,11 +45,11 @@
                 faqs
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="{{ route('endUser.articles') }}">
-                <i class="las la-newspaper"></i>
-                Article
-            </a>
-        </li>
+{{--        <li class="nav-item">--}}
+{{--            <a class="nav-link" aria-current="page" href="{{ route('endUser.articles') }}">--}}
+{{--                <i class="las la-newspaper"></i>--}}
+{{--                Article--}}
+{{--            </a>--}}
+{{--        </li>--}}
     </ul>
 </div>
