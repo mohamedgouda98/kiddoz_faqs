@@ -39,16 +39,13 @@ class AdminSeeder extends Command
      */
     public function handle()
     {
-        $users = [
-            [
-                'id'             => 1,
-                'name'           => 'Admin',
-                'email'          => 'admin@mail.com',
-                'password'       => Hash::make('12345678'),
-                'remember_token' => null,
-            ],
-        ];
-        User::insert($users);
+
+        User::create([
+            'name'           => 'Admin',
+            'email'          => 'admin@mail.com',
+            'password'       => Hash::make('12345678'),
+            'remember_token' => null,
+        ]);
         return 0;
     }
 }
