@@ -4,17 +4,17 @@
             <ul class="topnav">
                 <li></li>
                 <li>
-                    <a href="{{ route('home') }}">
+                    <a href="{{ route('admin.home') }}">
                         <i class="fa fa-home"></i> Home
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('articles.index') }}">
+                    <a href="{{ route('admin.articles.index') }}">
                         <i class="fa fa-file-text-o"></i> Articles
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('faq.index') }}">
+                    <a href="{{ route('admin.faq-questions.index') }}">
                         <i class="fa fa-lightbulb-o"></i> FAQ
                     </a>
                 </li>

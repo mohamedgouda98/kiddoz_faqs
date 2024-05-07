@@ -72,7 +72,7 @@
                     </a>
                 </li>
             @endcan
-            @can('article_access')
+{{--            @can('article_access')--}}
                 <li class="nav-item">
                     <a href="{{ route("admin.articles.index") }}" class="nav-link {{ request()->is('admin/articles') || request()->is('admin/articles/*') ? 'active' : '' }}">
                         <i class="fa-fw far fa-newspaper nav-icon">
@@ -81,8 +81,8 @@
                         {{ trans('cruds.article.title') }}
                     </a>
                 </li>
-            @endcan
-            @can('faq_management_access')
+{{--            @endcan--}}
+{{--            @can('faq_management_access')--}}
                 <li class="nav-item nav-dropdown">
                     <a class="nav-link  nav-dropdown-toggle" href="#">
                         <i class="fa-fw fas fa-question nav-icon">
@@ -100,8 +100,8 @@
                                     {{ trans('cruds.faqCategory.title') }}
                                 </a>
                             </li>
-                        @endcan
-                        @can('faq_question_access')
+{{--                        @endcan--}}
+{{--                        @can('faq_question_access')--}}
                             <li class="nav-item">
                                 <a href="{{ route("admin.faq-questions.index") }}" class="nav-link {{ request()->is('admin/faq-questions') || request()->is('admin/faq-questions/*') ? 'active' : '' }}">
                                     <i class="fa-fw fas fa-question nav-icon">
@@ -110,7 +110,7 @@
                                     {{ trans('cruds.faqQuestion.title') }}
                                 </a>
                             </li>
-                        @endcan
+{{--                        @endcan--}}
                     </ul>
                 </li>
             @endcan
